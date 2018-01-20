@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_1r5jigb" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="prufen-ob-voll" name="Vollständigkeit">
+    <extensionElements>
+      <biodi:bounds x="200" y="200" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable" hitPolicy="FIRST">
+      <input id="input1" label="sauber" camunda:inputVariable="">
+        <inputExpression id="inputExpression1" typeRef="boolean">
+          <text>sauber</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1lh0vl1" label="richtig" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_0qeyen4" typeRef="boolean">
+          <text>richtig</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_196wtms" label="rechtzeitig" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_05fqogw" typeRef="boolean">
+          <text>rechtzeitig</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_17a72w2" label="fehler" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_0phgc5d" typeRef="boolean">
+          <text>fehler</text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="ergebnis" name="ergebnis" typeRef="boolean" />
+      <rule id="row-696700836-1">
+        <description></description>
+        <inputEntry id="UnaryTests_07cjaru">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jso4ax">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0t5ezzm">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0daoxg3">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_065m276">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="table-675597985-1">
+        <inputEntry id="UnaryTests_0err81y">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_196hx2r">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_090mosd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rkutiu">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xp0lnv">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-10169095-1">
+        <inputEntry id="UnaryTests_15fj26r">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1culhpp">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u67tn8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0avg9bj">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_02ekdj2">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-10169095-2">
+        <inputEntry id="UnaryTests_1c3bh2l">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1evqlpt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15ojjpe">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_100kcqa">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0s7vtst">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-10169095-3">
+        <inputEntry id="UnaryTests_15nm4s0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_023ekkf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0uu4nuk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1b0x7mu">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0olp6do">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
