@@ -38,7 +38,7 @@ public class Dropbox {
         //System.out.println(account.getName().getDisplayName());
         
         try{
-            String folderName="/test.txt";
+            String folderName="/testfolder";
 			FolderMetadata folder = client.files().createFolder(folderName);
             System.out.println(folder.getName());
         } catch (CreateFolderErrorException err) {
